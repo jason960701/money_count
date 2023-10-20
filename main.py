@@ -35,7 +35,7 @@ file = open("result.txt","w",encoding="utf-8")
 #encoding -> 文字編碼 繁體用的是"utdf-8" 簡體"-5"
 file.write("本金:"+str(x)+"\n")
 file.write("年利率:"+str(s)+"\n")
-file.write("投資年分:"+str(y)+"\n")
+file.write("投資年分:pip"+str(y)+"\n")
 file.write("-----------這是可以得到的總金額-------------\n")
 num = compound_interest(x,s,y)
 file.write(f"{num:.2f}元")
